@@ -5,6 +5,7 @@
     cursor: pointer;
     padding: 10px;
     z-index: 1000;
+    position: relative;
 }
 
 .hamburger-btn span {
@@ -14,6 +15,7 @@
     background-color: #333;
     margin: 5px 0;
     transition: all 0.3s ease;
+    border-radius: 3px;
 }
 
 .hamburger-btn.active span:nth-child(1) {
@@ -45,6 +47,7 @@
         top: 0;
         right: -100%;
         width: 80%;
+        max-width: 300px;
         height: 100vh;
         background-color: #fff;
         box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
@@ -71,14 +74,35 @@
         display: block;
         padding: 10px;
         font-size: 1.1rem;
+        color: #333;
+        transition: all 0.3s ease;
+    }
+
+    .main-nav a:hover {
+        background-color: #f5f5f5;
+        padding-right: 15px;
     }
 
     body.menu-open {
         overflow: hidden;
     }
 
+    body.menu-open::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+    }
+
     .header-top {
         padding: 10px;
+        position: relative;
+        z-index: 1000;
+        background: #fff;
     }
 
     .logo img {
@@ -97,6 +121,7 @@
 @media (max-width: 768px) {
     .organic-products {
         padding: 1rem;
+        margin-top: 60px;
     }
 
     .page-header {
