@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>محصولات ارگانیک - فروشگاه مواد غذایی چیک چی</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="organic-products.css">
         <link rel="stylesheet" href="mobile-menu.css">
         <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet"
                 type="text/css" />
@@ -50,64 +51,109 @@
 
         <main>
                 <section class="organic-products">
-                        <h1>محصولات از دل مزارع سرسبز گیلان</h1>
-                        <p class="section-description">طعم طبیعت، از مزارع سرسبز گیلان به سفره شما</p>
+                        <div class="page-header">
+                                <h1>محصولات از دل مزارع سرسبز گیلان</h1>
+                                <p>طعم طبیعت، از مزارع سرسبز گیلان به سفره شما</p>
+                        </div>
 
-                        <div class="product-categories">
-                                <div class="category">
-                                        <h2>انواع برنج</h2>
-                                        <ul>
-                                                <li>برنج هاشمی</li>
-                                                <li>برنج علی کاظمی</li>
-                                                <li>برنج دم سیاه</li>
-                                                <li>برنج طارم</li>
-                                        </ul>
+                        <div class="categories-grid">
+                                <!-- برنج -->
+                                <div class="category-card" data-category="rice">
+                                        <div class="category-image">
+                                                <img src="assets/images/categories/rice.jpg" alt="انواع برنج">
+                                        </div>
+                                        <div class="category-content">
+                                                <h2>انواع برنج</h2>
+                                                <ul class="subcategories">
+                                                        <li><a href="#" data-subcategory="hashemi">برنج هاشمی</a></li>
+                                                        <li><a href="#" data-subcategory="alikazemi">برنج علی کاظمی</a>
+                                                        </li>
+                                                        <li><a href="#" data-subcategory="damsiah">برنج دم سیاه</a></li>
+                                                        <li><a href="#" data-subcategory="tarom">برنج طارم</a></li>
+                                                </ul>
+                                        </div>
                                 </div>
 
-                                <div class="category">
-                                        <h2>انواع لبنیات</h2>
-                                        <ul>
-                                                <li>پنیر محلی</li>
-                                                <li>ماست محلی</li>
-                                                <li>کره محلی</li>
-                                                <li>شیر تازه</li>
-                                        </ul>
+                                <!-- لبنیات -->
+                                <div class="category-card" data-category="dairy">
+                                        <div class="category-image">
+                                                <img src="assets/images/categories/dairy.jpg" alt="انواع لبنیات">
+                                        </div>
+                                        <div class="category-content">
+                                                <h2>انواع لبنیات</h2>
+                                                <ul class="subcategories">
+                                                        <li><a href="#" data-subcategory="cheese">پنیر محلی</a></li>
+                                                        <li><a href="#" data-subcategory="yogurt">ماست محلی</a></li>
+                                                        <li><a href="#" data-subcategory="butter">کره محلی</a></li>
+                                                        <li><a href="#" data-subcategory="milk">شیر تازه</a></li>
+                                                </ul>
+                                        </div>
                                 </div>
 
-                                <div class="category">
-                                        <h2>سبزیجات تازه</h2>
-                                        <ul>
-                                                <li>سبزی خوردن</li>
-                                                <li>سبزی آش و خورشت</li>
-                                                <li>سبزیجات محلی</li>
-                                        </ul>
+                                <!-- سبزیجات تازه -->
+                                <div class="category-card" data-category="fresh-vegetables">
+                                        <div class="category-image">
+                                                <img src="assets/images/categories/vegetables.jpg" alt="سبزیجات تازه">
+                                        </div>
+                                        <div class="category-content">
+                                                <h2>سبزیجات تازه</h2>
+                                                <ul class="subcategories">
+                                                        <li><a href="#" data-subcategory="herbs">سبزی خوردن</a></li>
+                                                        <li><a href="#" data-subcategory="cooking-herbs">سبزی آش و
+                                                                        خورشت</a></li>
+                                                        <li><a href="#" data-subcategory="local-vegetables">سبزیجات
+                                                                        محلی</a></li>
+                                                </ul>
+                                        </div>
                                 </div>
 
-                                <div class="category">
-                                        <h2>خشکبار و حبوبات</h2>
-                                        <ul>
-                                                <li>سبزی خشک</li>
-                                                <li>حبوبات محلی</li>
-                                                <li>میوه خشک</li>
-                                        </ul>
+                                <!-- حبوبات و سبزیجات خشک -->
+                                <div class="category-card" data-category="dried">
+                                        <div class="category-image">
+                                                <img src="assets/images/categories/dried.jpg" alt="خشکبار و حبوبات">
+                                        </div>
+                                        <div class="category-content">
+                                                <h2>خشکبار و حبوبات</h2>
+                                                <ul class="subcategories">
+                                                        <li><a href="#" data-subcategory="dried-herbs">سبزی خشک</a></li>
+                                                        <li><a href="#" data-subcategory="beans">حبوبات محلی</a></li>
+                                                        <li><a href="#" data-subcategory="dried-fruits">میوه خشک</a>
+                                                        </li>
+                                                </ul>
+                                        </div>
                                 </div>
 
-                                <div class="category">
-                                        <h2>انواع نان محلی</h2>
-                                        <ul>
-                                                <li>نان محلی</li>
-                                                <li>نان برنجی</li>
-                                                <li>نان‌های خاص</li>
-                                        </ul>
+                                <!-- نان -->
+                                <div class="category-card" data-category="bread">
+                                        <div class="category-image">
+                                                <img src="assets/images/categories/bread.jpg" alt="انواع نان">
+                                        </div>
+                                        <div class="category-content">
+                                                <h2>انواع نان محلی</h2>
+                                                <ul class="subcategories">
+                                                        <li><a href="#" data-subcategory="local-bread">نان محلی</a></li>
+                                                        <li><a href="#" data-subcategory="rice-bread">نان برنجی</a></li>
+                                                        <li><a href="#" data-subcategory="special-bread">نان‌های خاص</a>
+                                                        </li>
+                                                </ul>
+                                        </div>
                                 </div>
 
-                                <div class="category">
-                                        <h2>انواع زیتون</h2>
-                                        <ul>
-                                                <li>زیتون سبز</li>
-                                                <li>زیتون سیاه</li>
-                                                <li>روغن زیتون</li>
-                                        </ul>
+                                <!-- زیتون -->
+                                <div class="category-card" data-category="olive">
+                                        <div class="category-image">
+                                                <img src="assets/images/categories/olive.jpg" alt="انواع زیتون">
+                                        </div>
+                                        <div class="category-content">
+                                                <h2>انواع زیتون</h2>
+                                                <ul class="subcategories">
+                                                        <li><a href="#" data-subcategory="green-olive">زیتون سبز</a>
+                                                        </li>
+                                                        <li><a href="#" data-subcategory="black-olive">زیتون سیاه</a>
+                                                        </li>
+                                                        <li><a href="#" data-subcategory="olive-oil">روغن زیتون</a></li>
+                                                </ul>
+                                        </div>
                                 </div>
                         </div>
                 </section>
@@ -127,6 +173,21 @@
                 </div>
         </footer>
 
+        <script>
+                // اضافه کردن کلاس active به دسته‌بندی‌ها هنگام کلیک
+                document.querySelectorAll('.category-card').forEach(card => {
+                        card.addEventListener('click', function () {
+                                this.classList.toggle('active');
+                        });
+                });
+
+                // جلوگیری از بسته شدن منو هنگام کلیک روی زیردسته‌ها
+                document.querySelectorAll('.subcategories a').forEach(link => {
+                        link.addEventListener('click', function (e) {
+                                e.stopPropagation();
+                        });
+                });
+        </script>
         <script src="mobile-menu.js"></script>
 </body>
 
